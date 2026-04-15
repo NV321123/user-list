@@ -28,7 +28,7 @@ export const UserRow = memo(({ user, onEdit, onDeleteRequest }: Props) => {
     <TableRow 
       onClick={() => onEdit(user)} 
       onKeyDown={handleKeyDown}
-      className="cursor-pointer animate-fade-in"
+      className="cursor-pointer animate-in fade-in-0 slide-in-from-bottom-2 duration-300"
       tabIndex={0}
       role="button"
       aria-label={`Edit user ${user.username}`}
