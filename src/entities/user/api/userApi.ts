@@ -2,7 +2,7 @@ import axios from 'axios';
 import type { IUser } from '../model/types';
 
 const API_KEY = import.meta.env.VITE_API_KEY;
-const BASE_URL = import.meta.env.VITE_BASE_UR;
+const BASE_URL = import.meta.env.VITE_BASE_URL;
 
 interface RawApiUser {
   name: string;
