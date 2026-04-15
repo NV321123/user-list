@@ -35,11 +35,21 @@
 }
 
 @layer base {
+  html {
+    background-color: var(--color-background);
+  }
+
   * {
     @apply border-border;
   }
+
   body {
     @apply bg-background text-foreground font-sans antialiased;
+    scrollbar-gutter: stable;
+  }
+
+  body[data-scroll-locked] {
+    padding-right: 0 !important;
   }
 }
 
@@ -47,13 +57,4 @@
   .container {
     margin-inline: auto; 
   }
-}
-
-@keyframes fade-in {
-  from { opacity: 0; transform: translateY(5px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-.animate-fade-in {
-  animation: fade-in 0.3s ease-out;
 }
