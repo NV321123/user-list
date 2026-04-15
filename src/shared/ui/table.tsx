@@ -7,13 +7,11 @@ type TableProps = React.HTMLAttributes<HTMLTableElement> & {
 };
 
 const Table = ({ className, ref, ...props }: TableProps) => (
-  <div className="relative w-full overflow-auto">
-    <table
-      ref={ref}
-      className={cn('w-full caption-bottom text-sm', className)}
-      {...props}
-    />
-  </div>
+  <table
+    ref={ref}
+    className={cn('w-full caption-bottom text-sm', className)}
+    {...props}
+  />
 );
 Table.displayName = 'Table';
 
