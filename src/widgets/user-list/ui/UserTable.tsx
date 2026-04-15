@@ -79,7 +79,7 @@ export const UserTable: React.FC = () => {
           ))}
         </div>
       ) : (
-        <div className="hidden md:block rounded-lg border bg-card text-card-foreground shadow-sm">
+        <div className="hidden md:block rounded-lg border bg-card text-card-foreground shadow-sm overflow-x-auto overflow-y-clip">
           <Table>
             <TableHeaderRow />
             <TableBody>
